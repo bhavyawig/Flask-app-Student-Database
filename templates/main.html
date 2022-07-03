@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+      </head>
+    <body>
+      <form action="{{ url_for('AddText') }}" method="POST">
+        <div class="back">
+        <div class="heading">
+        <h1> Welcome to JIIT College ! </h1>
+        </div>
+        <div class="entry">
+            <label for="first_name">Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter Name"><required> </required><br><br>
+        <label for="college_enroll">College Enrollment Number</label>
+        <input type="text" id="college_enroll" name="college_enroll" placeholder="Enrollment number"><required> </required><br><br>
+        <label for='year'> Year</label>
+        <input type="year" id="year" name="year" aria-placeholder="year"><required></required><br><br>
+            <label for="stream">Choose a Stream from the given options:</label>
+            <select name="stream" id="stream">
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+                <option value="Bio-Tech">Bio-Tech</option>
+              </optgroup>
+            </select>
+            <br><br>
+            <input type="Submit" value="Submit"><br><br>
+          </form>
+        </div>
+
+        <form action="{{ url_for('top') }}">
+          <h3>Top Ten Performers ! </h3>
+          <button type="submit">Forward</button>
+        </form>
+
+
+        <form action="{{ url_for('lastthing') }}" method="POST">
+          <label for="namelelo">Enter Roll number to find score </label>
+          <input type="text" id="namelelo" name="namelelo" placeholder="Enrollment number"><required> </required><br><br>
+          <label for="brnch">Enter Branch </label>
+          <input type="text" id="brnch" name="brnch" placeholder="Branch"><required> </required><br><br>
+
+          <input type="Submit" value="Submit"><br><br>
+        </form>
+
+  
+
+    </body>
+</div>
+</html>

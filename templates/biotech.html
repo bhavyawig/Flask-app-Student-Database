@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='biotech.css')}}">
+      </head>
+      <body>
+        <div class="back">
+          <form action="{{ url_for('Mbio') }}" method="POST">
+            <h1> Bio-Technology Subjects !</h1>
+            <label for="enroll">Enrollment number</label>
+            <input type="text" id="enroll" name="enroll" placeholder="Enter College Enrollment Number"><required></required><br><br>            <label for="env">Environmental Science </label>
+        <label for="env">Environmental</label>
+            <input type="text" id="env" name="env" placeholder="Enter Environmental Marks"><required> </required><br><br>
+        <label for="micro">Micro Science</label>
+        <input type="text" id="micro" name="micro" placeholder="Enter Micro Science Marks"><required> </required><br><br>
+        <label for="org">Organisms </label>
+        <input type="text" id="org" name="org" placeholder="Enter Organisms Marks"><required> </required><br><br>
+        <label for="bot">Botany</label>
+        <input type="text" id="bot" name="bot" placeholder="Enter Botany Marks"><required> </required><br><br>
+        <input type="Submit" value="Submit">
+ 
+        </form>
+    </div>
+      </body>
+</html>

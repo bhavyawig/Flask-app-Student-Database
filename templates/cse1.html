@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='cse12.css')}}">
+      </head>
+      <body>
+        <div class="back">
+          <form action="{{ url_for('Mcse') }}" method="POST">
+            <h1> CSE SUBJECTS !</h1>
+            <label for="enroll">Enrollment number</label>
+            <input type="text" id="enroll" name="enroll" placeholder="Enter College Enrollment Number"><required></required><br><br>
+            <label for="DSA">DSA</label>
+        <input type="text" id="dsa" name="dsa" placeholder="Enter DSA Marks"><required> </required><br><br>
+        <label for="prp">PRP</label>
+        <input type="text" id="prp" name="prp" placeholder="Enter PRP Marks"><required> </required><br><br>
+        <label for="Digital">Digital Signals </label>
+        <input type="text" id="Digital" name="Digital" placeholder="Enter Digital Signals Marks"><required> </required><br><br>
+        <label for="algo">Algorithms</label>
+        <input type="text" id="algo" name="algo" placeholder="Enter Algorithms Marks"><required> </required><br><br>
+        <input type="Submit" value="Submit">
+ 
+        </form>
+    </div>
+      </body>
+</html>
